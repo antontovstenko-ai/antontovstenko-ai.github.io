@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SecondBrain bot — Політика конфіденційності</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
+    h2 { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>Політика конфіденційності</h1>
+  <p><strong>SecondBrain bot</strong> — особистий застосунок, яким користується лише його власник.
+     Сторонні користувачі не мають до нього доступу.</p>
+
+  <h2>Які дані обробляються</h2>
+  <ul>
+    <li>Повідомлення, голосові нотатки й фото, які власник надсилає боту в Telegram.</li>
+    <li>Фото документів (паспортів), які власник надсилає для збереження.</li>
+  </ul>
+
+  <h2>Доступ до Google Drive</h2>
+  <p>Застосунок використовує лише дозвіл <code>https://www.googleapis.com/auth/drive.file</code>:
+     він може створювати, читати й видаляти <strong>тільки ті файли, які створив сам</strong> — фото документів
+     у теці «SecondBrain — паспорти» на Google Drive власника. До інших файлів на Google Drive застосунок
+     доступу не має.</p>
+
+  <h2>Де зберігаються й кому передаються дані</h2>
+  <ul>
+    <li>Фото документів — на Google Drive власника.</li>
+    <li>Текстові дані (нотатки, розпізнані дані документів) — у базі даних на пристрої власника
+        та в його git-репозиторії.</li>
+    <li>Для розпізнавання тексту на фото й виділення ключових тез дані надсилаються мовній моделі
+        Claude компанії Anthropic.</li>
+    <li>Дані не продаються, не використовуються для реклами й не передаються іншим третім особам.</li>
+  </ul>
+
+  <h2>Видалення даних</h2>
+  <p>Власник може будь-коли видалити дані: файли — з теки на Google Drive, доступ застосунку — на сторінці
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Контакти</h2>
+  <p>Питання щодо цієї політики: власник застосунку через GitHub
+     <a href="https://github.com/antontovstenko-ai">antontovstenko-ai</a>.</p>
+</body>
+</html>
